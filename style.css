@@ -1,0 +1,243 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    margin-bottom: 1000px;
+    padding-top: 120px;
+    padding-left: 75px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+@media(max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width:1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.thumbnail-row {
+    position: relative;
+}
+
+.video-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    color: white;
+    background-color: black;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.video-info-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-picture {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 12px;
+}
+
+.video-title {
+    margin-bottom: 10px;
+    color: var(--yt-spec-text-primary)
+}
+
+.video-author,
+.video-stats {
+    font-size: 13px;
+    color: #606060;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(228, 228, 228);
+    z-index: 1000;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 24px;
+    margin-left: 16px;
+    margin-right: 20px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.search-bar {
+    flex: 1;
+    width: 400px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid rgb(182, 182, 182);
+    padding-left: 14px;
+    font-size: 14px;
+}
+
+.search-button {
+    height: 39px;
+    width: 60px;
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.search-icon {
+    height: 26px;
+    margin-top: 5px;
+}
+
+.voice-search-button {
+    height: 39px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.voice-search-icon {
+    height: 24px;
+    margin-top: 5px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon,
+.user-picture-icon {
+    height: 24px;
+}
+
+.user-picture-icon {
+    border-radius: 12px;
+}
+
+.side-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+    background-color: white;
+    width: 80px;
+}
+
+.sidebar-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background-color: lightgray;
+}
+
+.sidebar-link img {
+    display: flex;
+    align-items: center;
+    height: 26px;
+}
+
+.header-bottom {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    gap: 2px;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 70px;
+    background-color: white;
+    z-index: 999;
+}
+
+.header-bottom div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f6f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.header-bottom div:hover {
+    background-color: black;
+    color: white;
+}
